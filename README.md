@@ -5,7 +5,7 @@ This is an Arduino library for controlling "Woods Indoor Wireless Remote Control
 HARDWARE:
 
     HARDWARE REQUIREMENTS:
-        Woods Wireless Outlets: http://amzn.com/B003ZTWYXY
+        [Woods Wireless Outlets](http://amzn.com/B003ZTWYXY)
         315MHz Transmitter: http://amzn.com/B00LNADJS6
         9V or 12V DC Power Supply
         Arduino (or similar MCU)
