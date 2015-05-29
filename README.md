@@ -4,18 +4,18 @@ This is an Arduino library for controlling "Woods Indoor Wireless Remote Control
 
 HARDWARE:
 
-    Hardware Requirements:
+    HARDWARE REQUIREMENTS:
         Woods Wireless Outlets: http://amzn.com/B003ZTWYXY
         315MHz Transmitter: http://amzn.com/B00LNADJS6
         9V or 12V DC Power Supply
         Arduino (or similar MCU)
 
-    Connections:
+    CONNECTIONS:
         Arduino: PIN 4  ->  315MHz-Module: DATA PIN
         12V powersupply + -> 315MHz-Module: VCC
         12V powersupply - -> 315MHz-Module: GND & Arduino: GND
 
-    Setup:
+    SETUP:
         12V Powersupply to power the 315MHz-Module
         * Make sure to use common ground with Arduino
 
@@ -24,7 +24,7 @@ HARDWARE:
 
 SOFTWARE:
     
-    Setup:
+    SETUP:
         Create a new sketch
         To include the library you have two options
             - You can include every channel:
@@ -35,13 +35,22 @@ SOFTWARE:
             - Or you can include a specific channel you need:
                 #include "ChannelF.h"
 
-        Before void setup() you want to intialize all your outlets you will be controlling by calling the particular channel of the outlet (A-H) and passing it the Arduino pin connected to DATA:
+        Before void setup() you want to intialize all your outlets you
+        will be controlling by calling the particular channel of the
+        outlet (A-H) and passing it the Arduino pin connected to DATA:
 
             ChannelF outlet_name(pin_Number);
-            
-    Use:
-        You can toggle the outlet's state by calling its toggle function and passing it the channel (1-3) and power state 
+
+    USE:
+        You can toggle the outlet's state by calling its toggle function
+        and passing it the channel (1-3) and power state 
         (true->on or false->off)
 
             i.e.
             outlet_name.toggle(1, true);
+
+
+Please see the examples for more information!
+
+
+
