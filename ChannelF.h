@@ -25,8 +25,8 @@ THE SOFTWARE.
 #ifndef ChannelF_h
 #define ChannelF_h
 #include "Arduino.h"
-
 #include "Outlet.h"
+
 class ChannelF : public Outlet {
     public:
         ChannelF(int pin);

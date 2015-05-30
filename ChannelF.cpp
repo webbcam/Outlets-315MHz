@@ -45,55 +45,6 @@ void ChannelF::toggle(int channel, bool state) {
     }
 }
 
-void ChannelF::ch1(bool state) {
-
-    if (state == true) {
-        //  turn outlet on
-        for (int i=0; i<5; i++) {   
-            ch1ON();    // send x5 to account for poor receiver 
-        }
-    }
-    else {
-        //  turn outlet off
-        for (int i=0; i<5; i++) {  
-            ch1OFF();   //  send x5 to account for poor receiver 
-        }
-    }
-}
-
-void ChannelF::ch2(bool state) {
-
-    if (state == true) {
-        //  turn outlet on
-        for (int i=0; i<5; i++) {   
-            ch2ON();    // send x5 to account for poor receiver 
-        }
-    }
-    else {
-        //  turn outlet off
-        for (int i=0; i<5; i++) {  
-            ch2OFF();   //  send x5 to account for poor receiver 
-        }
-    }
-}
-
-void ChannelF::ch3(bool state) {
-
-    if (state == true) {
-        //  turn outlet on
-        for (int i=0; i<5; i++) {   
-            ch3ON();    // send x5 to account for poor receiver 
-        }
-    }
-    else {
-        //  turn outlet off
-        for (int i=0; i<5; i++) {  
-            ch3OFF();   //  send x5 to account for poor receiver 
-        }
-    }
-}
-
-
 void ChannelF::ch1ON() {
     preamble();
     for (int i=0; i<2; i++) {
