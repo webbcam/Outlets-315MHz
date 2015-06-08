@@ -52,5 +52,8 @@ SOFTWARE:
 
 Please see the examples for more information!
 
+*NOTE: Currently the only channel I have is Channel-F. My goal is to get 
+each Channel on here (A-H?) over time. Please feel free to add any 
+channels you've figured out yourself
 
 
